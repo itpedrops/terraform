@@ -3,7 +3,7 @@ resource "aws_instance" "nginx-php" {
   instance_type = "t2.medium"
 
   subnet_id = "subnet-0ecb4f69"
-  key_name = "devops-skyone-solutions"
+  key_name = "my-key-par"
   security_groups = [
     "sg-0d248aa8b905c9aa3"
   ] 
