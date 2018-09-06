@@ -3,7 +3,7 @@ resource "aws_instance" "${var.name-instance}" {
   instance_type = "${var.size-instance}"
 #  count = 1
   subnet_id = "subnet-0ecb4f69"
-  key_name = "devops-skyone-solutions"
+  key_name = "dmy-key-par"
   security_groups = [
     "sg-0d248aa8b905c9aa3"
   ] 
