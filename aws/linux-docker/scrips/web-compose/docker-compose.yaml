@@ -1,0 +1,16 @@
+version: '3'
+services: 
+    php:
+        image: php:7-fpm
+        volumes:
+            - ./code:/code      
+    web:
+        image: nginx:latest
+        ports:
+        - "8080:80"
+        volumes:
+                - ./code:/code
+                - ./conf:/etc/nginx/conf.d/
+        depends_on:
+            - php                
+                
